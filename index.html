@@ -13,49 +13,46 @@
 <body>
   <div class="navbar">
     <ul>
-      <li><a href="#">Nav Item 1</a></li>
-      <li><a href="#">Nav Item 2</a></li>
-      <li><a href="#">Nav Item 3</a></li>
-      <li><a href="#">Nav Item 4</a></li>
+      <li><a href="#housing-resources">Housing</a></li>
+      <li><a href="#food-resources">Food</a></li>
+      <li><a href="#work-resources">Employment</a></li>
+      <li><a href="#resource-container">Resources</a></li>
       <!-- Stretch Challenge: Drop Down -->
     </ul>
   </div>
   <!-- Part 2: Flexbox Layout Stater Code -->
 
-  <div class="container">
-    <div class="item"></div>
-    <div class="item"></div>
-    <div class="item"></div>
-  </div>
-  <div class="header">
-    <div id="header-left">
+  <div class="header-container">
+    <div class="header-item">
       <img id="header-img" src="images/human-resources-2724192_640.png" alt="">
     </div>
-    <div id="header-right"">
+    <div class="header-item">
       <h1>Finding Housing and Resources Near You</h1>
-      <h3>Housing the Homeless. Breaking the Cycle.</h3>
-      <div id=" buttons">
-      <button class="header-button"> Housing </button>
+      <h3 id="subheader">Housing the Homeless. Breaking the Cycle.</h3>
+      <!-- <div id=" buttons"> -->
+      <!-- <button class="header-button"> Housing </button>
       <button class="header-button"> Food </button>
       <button class="header-button"> Employment </button>
-    </div>
+    </div> -->
 
   </div>
   </div>
+  <div id="about">
+    <h2>About</h2>
+    <p>Housing has long been an issue in the Bay Area.
+      Many lack housing and some who do, worry day to
+      day whether they can providefor themselves, their
+      family, and still lead a happy, fulfilling, and
+      happy life. This site provides information on where
+      those who are in precarious positions can find rosources
+      and support.</p>
+  </div>
 
-  <h2>About</h2>
-  <p>Housing has long been an issue in the Bay Area.
-    Many lack housing and some who do, worry day to
-    day whether they can providefor themselves, their
-    family, and still lead a happy, fulfilling, and
-    happy life. This site provides information on where
-    those who are in precarious positions can find rosources
-    and support.</p>
 
-  <div class=" resource-container">
+  <div id="resource-container">
     <h2>Resources</h2>
-    
-    <div id="housing-resources">
+
+    <div class="housing-resources">
       <img src="" alt="">
       <h3>Housing Resources</h3>
     </div>
@@ -69,8 +66,9 @@
     </div>
   </div>
   <div class="footer">
-    <a href="mailto:xyz@gmail.com">Email Us </a><p></p>
-    <a href="https://www.codetenderloin.org/">Resources</a>
+    <a href="mailto:xyz@gmail.com">Email Us </a>
+    <p></p>
+    <a href="#resource-container">Resources</a>
   </div>
   <script src="script.js"></script>
 </body>
