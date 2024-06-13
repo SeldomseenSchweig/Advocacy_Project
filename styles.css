@@ -44,24 +44,6 @@ body {
 }
 
 
-#resource-container {
-  margin-bottom: 20%;
-  text-align: center;
-}
-
-
-.footer {
-  position: fixed;
-  background-color: navajowhite;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  display: inline-block;
-  padding: 3px;
-
-}
-
 /* Part 1: Navbar */
 
 /* General style rule set for all items in ul */
@@ -110,7 +92,39 @@ body {
 
 
 
+#resource-container {
+  margin-bottom: 20%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
 
-/* Part 2: Flexbox */
+#housing-resources, #food-resources, #work-resources{
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  
+}
 
-/* General style rule set for flex container */
+.resource-item{
+  flex: 1;
+ 
+  
+}
+img{
+  max-width: 30%;
+  
+}
+
+.footer {
+  position: fixed;
+  background-color: navajowhite;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  padding: 3px;
+
+}
+
