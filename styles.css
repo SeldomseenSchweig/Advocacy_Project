@@ -31,6 +31,7 @@ body {
 }
 
 #header-img {
+  
   max-width: 300px;
   margin-top: 5%;
 }
@@ -54,7 +55,7 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: white;
+  background-color: transparent;
   z-index: 1000;
 
 }
@@ -86,34 +87,39 @@ body {
 }
 
 /* Style rule set for hovered link */
-.navbar ul li a:hover {
+.navbar ul li:hover {
   font-weight: bold;
+  cursor: pointer;
 }
 
 
 
 #resource-container {
-  margin-bottom: 20%;
+  margin-top: 100px;
+  margin-bottom: 10%;
   text-align: center;
   display: flex;
   flex-direction: column;
 }
 
-#housing-resources, #food-resources, #work-resources{
+#housing-resources,
+#food-resources,
+#work-resources {
   display: flex;
   flex-direction: row;
   justify-content: baseline;
-  
+
 }
 
-.resource-item{
+.resource-item {
   flex: 1;
- 
-  
+
+
 }
-img{
+
+img {
   max-width: 30%;
-  
+
 }
 
 .footer {
@@ -128,3 +134,49 @@ img{
 
 }
 
+
+@media only screen and (min-width: 600px) {
+  span {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .navbar{
+    text-align: center;
+    margin-left: 10%;
+    width: 20%;
+    background-color: transparent;
+  
+  }
+  .navbar ul {
+    flex-direction: column;
+    display: none;
+    
+  }
+
+  .navbar .menu-icon {
+    display: block;
+    cursor:pointer
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+}
+
+#video{
+  max-width: 50%;
+  margin-left: 30%;
+  margin-bottom:15% ;
+  text-align: center;
+}
+
+
+.dark-mode {
+background-color: black;
+color: white;
+
+}

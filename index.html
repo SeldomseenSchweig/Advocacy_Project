@@ -8,19 +8,23 @@
   <link href="reset.css" rel="stylesheet" type="text/css" />
   <link href="reset-webview.css" rel="stylesheet" type="text/css" />
   <link href="styles.css" rel="stylesheet" type="text/css" />
+  <link src="script.js">
+  <link rel="shortcut icon" href="images/640px-UptownTenderloin_SF.ico" />
 </head>
 
 <body>
   <div class="navbar">
+
     <ul>
       <li><a href="#housing-resources">Housing</a></li>
       <li><a href="#food-resources">Food</a></li>
       <li><a href="#work-resources">Employment</a></li>
       <li><a href="#resource-container">Resources</a></li>
-      <!-- Stretch Challenge: Drop Down -->
+       <li id="toggle-theme-button"">Dark Mode</li>
     </ul>
+    <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
   </div>
-  <!-- Part 2: Flexbox Layout Stater Code -->
+
 
   <div class="header-container">
     <div class="header-item">
@@ -29,11 +33,7 @@
     <div class="header-item">
       <h1>Finding Housing and Resources Near You</h1>
       <h3 id="subheader">Housing the Homeless. Breaking the Cycle.</h3>
-      <!-- <div id=" buttons"> -->
-      <!-- <button class="header-button"> Housing </button>
-      <button class="header-button"> Food </button>
-      <button class="header-button"> Employment </button>
-    </div> -->
+ 
 
     </div>
   </div>
@@ -118,7 +118,8 @@
             <h5>CodeTenderloin</h5>
             <img src="images/codeT.png" alt="">
           </a>
-          <p>CodeTenderloin provides job readiness as well as health and general living, clothes, medical supplies, and other community needs.</p>
+          <p>CodeTenderloin provides job readiness as well as health and general living, clothes, medical supplies, and
+            other community needs.</p>
         </div>
         <div class="resource-item">
           <a href="https://www.hospitalityhouse.org/employment-program.html">
@@ -137,6 +138,10 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div id="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/s04DFGMPRD0?si=HstSc60hFJJY54d6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
   <div class="footer">
     <a href="mailto:xyz@gmail.com">Email Us </a>
