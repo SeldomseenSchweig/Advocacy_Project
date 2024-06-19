@@ -33,9 +33,40 @@ const addSignature = (event) => {
   ${hood} supports this.`;
   const sigs = document.getElementsByClassName('signatures')[0];
   sigs.appendChild(newSignature)
+  document.getElementById("sign-petition").reset()
   event.preventDefault();
+  
 }
-formButton.addEventListener('click', addSignature);
 
 
-// Add a click event listener to the sign now button here
+// Validation function
+
+const validateForm = () => {
+  const email = document.getElementById('email');
+  if (!email.value.includes('.com')) {
+    email.classList.add('error');
+  }else {
+      email.classList.remove('error');
+  }
+  let containsErrors = false;
+
+  var petitionInputs = document.getElementById("sign-petition").elements;
+  // TODO: Loop through all inputs
+  console.log(petitionInputs)
+  for(let i = 0; i < petitionInputs.length; i++){
+    console.log(petitionInputs[i].id)
+    if (petitionInputs[i].value.length < 2) {
+      console.log("error")
+      petitionInputs[i].classList.add('error');
+      containsErrors = true;
+    }
+    else {
+      petitionInputs[i].classList.remove('error');
+    }
+  }
+
+  // TODO: Validate the value of each input
+  if (containsErrors == false)  addSignature();
+}
+let signNowButton = document.getElementById('sign-now-button');
+signNowButton.addEventListener('click', validateForm);
