@@ -4,50 +4,40 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title> Housing</title>
+  <title>Housing Resources</title>
   <link href="reset.css" rel="stylesheet" type="text/css" />
-  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
   <link href="styles.css" rel="stylesheet" type="text/css" />
-  <link src="script.js">
   <link rel="shortcut icon" href="images/640px-UptownTenderloin_SF.ico" />
 </head>
 
 <body>
   <div class="navbar">
-
     <ul>
       <li><a href="#housing-resources">Housing</a></li>
       <li><a href="#food-resources">Food</a></li>
       <li><a href="#work-resources">Employment</a></li>
       <li><a href="#resource-container">Resources</a></li>
-      <li id="toggle-theme-button"">Dark Mode</li>
+      <li id="toggle-theme-button" onclick="toggleDarkMode()">Dark Mode</li>
     </ul>
-    <span class=" menu-icon" onclick="toggleMenu()">&#9776;</span>
+    <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
   </div>
-
 
   <div class="header-container">
     <div class="header-item">
-      <img id="header-img" src="images/human-resources-2724192_640.png" alt="">
+      <img id="header-img" src="images/human-resources-2724192_640.png" alt="Header Image">
     </div>
     <div class="header-item">
       <h1>Finding Housing and Resources Near You</h1>
       <h3 id="subheader">Housing the Homeless. Breaking the Cycle.</h3>
-
-
     </div>
   </div>
+
   <div id="about" class="revealable">
     <h2>About</h2>
-    <p>Housing has long been an issue in the Bay Area.
-      Many lack housing and some who do, worry day to
-      day whether they can providefor themselves, their
-      family, and still lead a happy, fulfilling, and
-      happy life. This site provides information on where
-      those who are in precarious positions can find rosources
-      and support.</p>
+    <p>Housing has long been an issue in the Bay Area. Many lack housing and some who do, worry day to day whether they
+      can provide for themselves, their family, and still lead a happy, fulfilling, and happy life. This site provides
+      information on where those who are in precarious positions can find resources and support.</p>
   </div>
-
 
   <div id="resource-container" class="revealable">
     <h2>Resources</h2>
@@ -58,65 +48,66 @@
         <div class="resource-item">
           <a href="https://www.tndc.org/voice/community-resources">
             <h5>Tenderloin Neighborhood Development Corporation</h5>
-            <img src="images/partner-tndc-FKL8CW-x300.jpg" alt="">
+            <img src="images/partner-tndc-FKL8CW-x300.jpg" alt="TNDC">
           </a>
           <p>TNDC develops community and provides affordable housing and services for people with low incomes in the
-            Tenderloin and throughout San Francisco, to promote equitable access to opportunity and resources. </p>
+            Tenderloin and throughout San Francisco, to promote equitable access to opportunity and resources.</p>
         </div>
         <div class="resource-item">
           <a href="https://www.thclinic.org/">
             <h5>Tenderloin Housing Clinic</h5>
-            <img src="images/thc-logo.png" alt="">
+            <img src="images/thc-logo.png" alt="THC">
           </a>
           <p>The mission of the Tenderloin Housing Clinic (THC) is to prevent tenant displacement, to preserve and
             expand San Francisco’s low cost housing stock, and to provide comprehensive legal assistance to low income
-            tenants. </p>
+            tenants.</p>
         </div>
         <div class="resource-item">
           <a href="https://sfresourceconnect.org/detail.php?id=48072723">
             <h5>Tenderloin Self-Help Center</h5>
-            <img src="images/mhasf_logo.jpg" alt="">
+            <img src="images/mhasf_logo.jpg" alt="MHA SF">
           </a>
           <p>San Francisco Resource Connect is a program of the Department of Aging and Adult Services (DAAS) and the
-            Mental Health Association of San Francisco. </p>
+            Mental Health Association of San Francisco.</p>
         </div>
       </div>
     </div>
-    <div class="revealable">
 
+    <div class="revealable">
       <h3>Food Resources</h3>
       <div id="food-resources">
         <div class="resource-item">
           <a href="https://www.tndc.org/our-work/health/health-wellness-program/food-nutrition">
             <h5>Tenderloin Neighborhood Development Corporation</h5>
-            <img src="images/partner-tndc-FKL8CW-x300.jpg" alt="">
+            <img src="images/partner-tndc-FKL8CW-x300.jpg" alt="TNDC">
           </a>
-          <p>TNDC has food distribution and a neighborhood garden. </p>
+          <p>TNDC has food distribution and a neighborhood garden.</p>
         </div>
         <div class="resource-item">
           <a href="https://www.glide.org/">
             <h5>Glide</h5>
-            <img src="images/glide-logo.svg" alt="">
+            <img src="images/glide-logo.svg" alt="Glide">
           </a>
-          <p>Glide is a organization that provides meals and other services </p>
+          <p>Glide is a organization that provides meals and other services.</p>
         </div>
         <div class="resource-item">
           <a href="https://sfresourceconnect.org/detail.php?id=48072723">
-            <h5>Project open hand</h5>
-            <img src="images/openhandlogo.png" alt="">
+            <h5>Project Open Hand</h5>
+            <img src="images/openhandlogo.png" alt="Project Open Hand">
           </a>
-          <p>Project Open Hand is a non-profit organization that provides food and other resources to those who need it.
-          </p>
+          <p>Project Open Hand is a non-profit organization that provides food and other resources to those who need
+            it.</p>
         </div>
       </div>
     </div>
+
     <div class="revealable">
       <h3>Employment Resources</h3>
       <div id="work-resources">
         <div class="resource-item">
           <a href="https://www.codetenderloin.org/">
             <h5>CodeTenderloin</h5>
-            <img src="images/codeT.png" alt="">
+            <img src="images/codeT.png" alt="CodeTenderloin">
           </a>
           <p>CodeTenderloin provides job readiness as well as health and general living, clothes, medical supplies, and
             other community needs.</p>
@@ -124,17 +115,16 @@
         <div class="resource-item">
           <a href="https://www.hospitalityhouse.org/employment-program.html">
             <h5>Hospitality House</h5>
-            <img src="images/hosp.png" alt="">
+            <img src="images/hosp.png" alt="Hospitality House">
           </a>
-          <p>Provides job training and employment opportunities for those who need it. </p>
+          <p>Provides job training and employment opportunities for those who need it.</p>
         </div>
         <div class="resource-item">
           <a href="https://www.tndc.org/voice/community-resources">
             <h5>Tenderloin Neighborhood Development Corporation</h5>
-            <img src="images/partner-tndc-FKL8CW-x300.jpg" alt="">
+            <img src="images/partner-tndc-FKL8CW-x300.jpg" alt="TNDC">
           </a>
-          <p>TNDC provides employment resources
-          </p>
+          <p>TNDC provides employment resources.</p>
         </div>
       </div>
     </div>
@@ -146,27 +136,25 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
+
   <div class="footer">
-    <a href="mailto:xyz@gmail.com">Email Us </a>
+    <a href="mailto:xyz@gmail.com">Email Us</a>
     <p></p>
     <a href="#resource-container">Resources</a>
   </div>
+
   <div class="petition" id="petition">
-    <h2 petiti>Sign Our Petition 📢</h2>
+    <h2>Sign Our Petition 📢</h2>
     <div class="petition-container">
-
-
       <div class="petition-para">
         Hundreds of people go homeless everyday, families do not have enough resources to make ends meet, People want a
-        better place to live. Sign our petition to increase housing reasources given by the city to the Tenderloin
-        district
+        better place to live. Sign our petition to increase housing resources given by the city to the Tenderloin
+        district.
       </div>
-      <div class="signatures">
-      </div>
-
+      <div class="signatures"></div>
     </div>
 
-    <!--- Sign Petition Form --->
+    <!-- Sign Petition Form -->
     <form id="sign-petition" title="sign-petition">
       <div class="pet-inputs">
         <label for="name">Name: </label>
@@ -178,18 +166,19 @@
       </div>
     </form>
 
-    <!--- Sign Now Button --->
+    <!-- Sign Now Button -->
     <button id="sign-now-button">Sign Now</button>
-
   </div>
 
   <div id="petitionModal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
       <h1 id="thanks"></h1>
-      <iframe src="https://giphy.com/embed/YTbZzCkRQCEJa" width="100%" height="360" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/party-excited-birthday-YTbZzCkRQCEJa"></a></p>
+      <iframe src="https://giphy.com/embed/YTbZzCkRQCEJa" width="100%" height="360" frameborder="0" class="giphy-embed"
+        allowfullscreen></iframe>
     </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 
