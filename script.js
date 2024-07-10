@@ -1,4 +1,6 @@
 // Toggle the navigation menu for mobile view
+
+
 function toggleMenu() {
   const menu = document.querySelector('.navbar ul');
   menu.classList.toggle('active');
@@ -34,8 +36,11 @@ const addSignature = (event) => {
     return;
   }
 
+
+
   const newSignature = document.createElement('p');
   newSignature.innerText = `🖊️ ${name} from ${hood} supports this.`;
+
   const sigs = document.getElementsByClassName('signatures')[0];
   sigs.appendChild(newSignature);
 
@@ -111,3 +116,27 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+let greetingForm = document.getElementsByClassName("greeting-container")[0]
+let username = document.getElementById("username");
+function setName(username, event) {
+  event.preventDefault();
+  let value = username.value;
+  console.log(value)
+  
+
+  greetingForm.classList.replace("greeting-container", "hidden")
+  window.localStorage.setItem("name", value)
+  console.log(greetingForm)
+  document.getElementById("greeting").innerHTML = `Hi ${value}! `
+}
+
+window.addEventListener("load", () => {
+  let greetingName = window.localStorage.getItem("name")
+  if (greetingName) {
+    greetingForm.classList.replace("greeting-container", "hidden")
+
+
+    document.getElementById("greeting").innerHTML = `Welcome Back ${greetingName}!`
+  }
+})
